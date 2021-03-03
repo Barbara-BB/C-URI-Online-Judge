@@ -1,0 +1,61 @@
+#include <stdio.h>
+int main(){
+     float cedulas;
+     int teste;
+     int notas;
+     int moedas;
+     int cem;
+     int cinq;
+     int vinte;
+     int dez;
+     int cinco;
+     int dois;
+     int um;
+     int cinqcent;
+     int vintecincocent;
+     int dezcent;
+     int cincocent;
+     int umcent;
+     int resto;
+     int resto1;
+     scanf("%i.%i",&notas,&moedas);
+     if(cedulas>=0&&cedulas<=1000000.00){
+     cem=notas/100;
+     resto=notas%100;
+     cinq=resto/50;
+     resto=resto%50;
+     vinte=resto/20;
+     resto=resto%20;
+     dez=resto/10;
+     resto=resto%10;
+     cinco=resto/5;
+     resto=resto%5;
+     dois=resto/2;
+     resto=resto%2;
+     um=resto/1;
+     resto=resto%1;
+     cinqcent=moedas/50;
+     resto1=moedas%50;
+     vintecincocent=resto1/25;
+     resto1=resto1%25;
+     dezcent=resto1/10;
+     resto1=resto1%10;
+     cincocent=resto1/5;
+     resto1=resto1%5;
+     umcent=resto1/1;
+     printf("NOTAS:\n");
+     printf("%d nota(s) de R$ 100.00\n",cem);
+     printf("%d nota(s) de R$ 50.00\n",cinq);
+     printf("%d nota(s) de R$ 20.00\n",vinte);
+     printf("%d nota(s) de R$ 10.00\n",dez);
+     printf("%d nota(s) de R$ 5.00\n",cinco);
+     printf("%d nota(s) de R$ 2.00\n",dois);
+     printf("MOEDAS:\n");
+     printf("%d moeda(s) de R$ 1.00\n",um);
+     printf("%d moeda(s) de R$ 0.50\n",cinqcent);
+     printf("%d moeda(s) de R$ 0.25\n",vintecincocent);
+     printf("%d moeda(s) de R$ 0.10\n",dezcent);
+     printf("%d moeda(s) de R$ 0.05\n",cincocent);
+     printf("%d moeda(s) de R$ 0.01\n",umcent);
+     }
+     return 0;}
